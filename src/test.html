@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <!--<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">-->
+</head>
+<body>
+<div>
+<ul>
+  <li>1</li>
+  <li>1</li>
+  <li>1</li>
+</ul>
+
+</div>
+<script>
+ var _li = document.getElementsByTagName('li')
+ for (var i = 0; i < _li.length; i++) {
+   (function (x) {
+     _li[i].onclick = function () {
+       console.log(x)
+     }
+   })(i)
+ }
+</script>
+</body>
+</html>
